@@ -1,0 +1,17 @@
+C:\Users\Dr Saajid\Downloads\SmallBasicANN-master\SmallBasicANN-master\TestANN\obj\Debug\TestANN.csprojResolveAssemblyReference.cache
+C:\Users\Dr Saajid\Downloads\SmallBasicANN-master\SmallBasicANN-master\TestANN\obj\Debug\MainWindow.g.cs
+C:\Users\Dr Saajid\Downloads\SmallBasicANN-master\SmallBasicANN-master\TestANN\obj\Debug\App.g.cs
+C:\Users\Dr Saajid\Downloads\SmallBasicANN-master\SmallBasicANN-master\TestANN\obj\Debug\TestANN_MarkupCompile.cache
+C:\Users\Dr Saajid\Downloads\SmallBasicANN-master\SmallBasicANN-master\TestANN\obj\Debug\TestANN_MarkupCompile.lref
+C:\Users\Dr Saajid\Downloads\SmallBasicANN-master\SmallBasicANN-master\TestANN\bin\Debug\TestANN.exe.config
+C:\Users\Dr Saajid\Downloads\SmallBasicANN-master\SmallBasicANN-master\TestANN\bin\Debug\TestANN.exe
+C:\Users\Dr Saajid\Downloads\SmallBasicANN-master\SmallBasicANN-master\TestANN\bin\Debug\TestANN.pdb
+C:\Users\Dr Saajid\Downloads\SmallBasicANN-master\SmallBasicANN-master\TestANN\bin\Debug\SmallBasicANN.dll
+C:\Users\Dr Saajid\Downloads\SmallBasicANN-master\SmallBasicANN-master\TestANN\bin\Debug\SmallBasicLibrary.dll
+C:\Users\Dr Saajid\Downloads\SmallBasicANN-master\SmallBasicANN-master\TestANN\bin\Debug\SmallBasicANN.pdb
+C:\Users\Dr Saajid\Downloads\SmallBasicANN-master\SmallBasicANN-master\TestANN\obj\Debug\MainWindow.baml
+C:\Users\Dr Saajid\Downloads\SmallBasicANN-master\SmallBasicANN-master\TestANN\obj\Debug\TestANN.g.resources
+C:\Users\Dr Saajid\Downloads\SmallBasicANN-master\SmallBasicANN-master\TestANN\obj\Debug\TestANN.Properties.Resources.resources
+C:\Users\Dr Saajid\Downloads\SmallBasicANN-master\SmallBasicANN-master\TestANN\obj\Debug\TestANN.csproj.GenerateResource.Cache
+C:\Users\Dr Saajid\Downloads\SmallBasicANN-master\SmallBasicANN-master\TestANN\obj\Debug\TestANN.exe
+C:\Users\Dr Saajid\Downloads\SmallBasicANN-master\SmallBasicANN-master\TestANN\obj\Debug\TestANN.pdb

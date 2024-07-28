@@ -1,0 +1,224 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SmallBasicANN</name>
+    </assembly>
+    <members>
+        <member name="T:SmallBasicANN.NeuralNetwork">
+            <summary>
+            Artificial Neural Network (ANN).
+            </summary>
+        </member>
+        <member name="M:SmallBasicANN.NeuralNetwork.New(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Create a new ANN.
+            </summary>
+            <param name="Name">The ANN name.</param>
+            <param name="Structure">Number of nodes in each layer (comma or space separated list).</param>
+            <returns>An error message or "True".</returns>
+        </member>
+        <member name="M:SmallBasicANN.NeuralNetwork.Load(Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Load a trained ANN from a file.
+            </summary>
+            <param name="Filename"></param>
+            <returns>An error message or ANN.</returns>
+        </member>
+        <member name="M:SmallBasicANN.NeuralNetwork.Save(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Save a trained ANN to a file.
+            </summary>
+            <param name="Name">The ANN name.</param>
+            <param name="Filename">The text file to save ANN to.</param>
+            <returns>An error message or "True".</returns>
+        </member>
+        <member name="M:SmallBasicANN.NeuralNetwork.Train(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Train an ANN.
+            </summary>
+            <param name="Name">The ANN name.</param>
+            <param name="TrainingSet">A file containing training data.</param>
+            <param name="FileMode">"True" for binary format.</param>
+            <returns>An error message or the epoch the training finished.</returns>
+        </member>
+        <member name="M:SmallBasicANN.NeuralNetwork.TrainAsync(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Train an ANN async (start the training an return immediately.
+            Use the training event to detect progress and when it has finished.
+            </summary>
+            <param name="Name">The ANN name.</param>
+            <param name="TrainingSet">A file containing training data.</param>
+            <param name="FileMode">"True" for binary format.</param>
+            <returns>An error message or 0.</returns>
+        </member>
+        <member name="M:SmallBasicANN.NeuralNetwork.Use(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Use ANN to calculate output from input.
+            </summary>
+            <param name="Name">The ANN name.</param>
+            <param name="Input">A comma or space separated list of input data.</param>
+            <returns>An error message or space separated list of result data.</returns>
+        </member>
+        <member name="M:SmallBasicANN.NeuralNetwork.Delete(Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Delete an ANN.
+            </summary>
+            <param name="Name">The ANN name.</param>
+            <returns>An error message or "True".</returns>
+        </member>
+        <member name="M:SmallBasicANN.NeuralNetwork.Exists(Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Check if ANN exists.
+            </summary>
+            <param name="Name">The ANN name.</param>
+            <returns>An error message or "True".</returns>
+        </member>
+        <member name="M:SmallBasicANN.NeuralNetwork.ConvertFile(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Conver the format of ANN training data.
+            </summary>
+            <param name="Input">The file to convert.</param>
+            <param name="Output">The file to save converted data to.</param>
+            <param name="Binary">"True" for binary to ascii.</param>
+            <returns>An error message or "True".</returns>
+        </member>
+        <member name="M:SmallBasicANN.NeuralNetwork.InputNodes(Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Get the number of input nodes.
+            </summary>
+            <param name="Name">The ANN name.</param>
+            <returns>An error message or the number of input nodes.</returns>
+        </member>
+        <member name="M:SmallBasicANN.NeuralNetwork.HiddenLayers(Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Get the number of hidden layers.
+            </summary>
+            <param name="Name">The ANN name.</param>
+            <returns>An error message or the number of hidden layers.</returns>
+        </member>
+        <member name="M:SmallBasicANN.NeuralNetwork.HiddenNodes(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Get the number of nodes on a hidden layer.
+            </summary>
+            <param name="Name">The ANN name.</param>
+            <param name="Layer">The hidden layer number.</param>
+            <returns>An error message or the number of nodes on hidden layer.</returns>
+        </member>
+        <member name="M:SmallBasicANN.NeuralNetwork.OutputNodes(Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Get the number of output nodes.
+            </summary>
+            <param name="Name">The ANN name.</param>
+            <returns>An error message or the number of output nodes.</returns>
+        </member>
+        <member name="M:SmallBasicANN.NeuralNetwork.Trained(Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Get the epoch of a trained ANN.
+            </summary>
+            <param name="Name">The ANN name.</param>
+            <returns>An error message or the epoch of a trained ANN.</returns>
+        </member>
+        <member name="M:SmallBasicANN.NeuralNetwork.Name(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Change the name of a ANN.
+            </summary>
+            <param name="Name">The ANN name.</param>
+            <param name="Value">The new name.</param>
+            <returns>An error message or the new ANN name.</returns>
+        </member>
+        <member name="M:SmallBasicANN.NeuralNetwork.Epochs(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Get or set the max number of epochs.
+            The epoch is the number of times the training data is re-used, default 100000.
+            </summary>
+            <param name="Name">The ANN name.</param>
+            <param name="Value">The requested data.</param>
+            <param name="Get">"True" to get the requested data.</param>
+            <returns>An error message or the requested data.</returns>
+        </member>
+        <member name="M:SmallBasicANN.NeuralNetwork.LearningRate(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Get or set the learning rate.
+            The learning rate is the amount errors are back propagated to node weights, default 0.7.
+            </summary>
+            <param name="Name">The ANN name.</param>
+            <param name="Value">The requested data.</param>
+            <param name="Get">"True" to get the requested data</param>
+            <returns>An error message or the requested data.</returns>
+        </member>
+        <member name="M:SmallBasicANN.NeuralNetwork.Momentum(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Get or set the momentum.
+            The momentun is the amount previous iteration errors are preserved during back propagation, default 0.3.
+            </summary>
+            <param name="Name">The ANN name.</param>
+            <param name="Value">The requested data.</param>
+            <param name="Get">"True" to get the requested data</param>
+            <returns>An error message or the requested data.</returns>
+        </member>
+        <member name="M:SmallBasicANN.NeuralNetwork.SigmoidResponse(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Get or set the sigmoid response.
+            The sigmoid response is the smoothing of values outside [-1,1] in the forward feed, defaut 1.0.
+            Sigmoid = 1/(1+Exp(-weight/sigmoid))
+            </summary>
+            <param name="Name">The ANN name.</param>
+            <param name="Value">The requested data.</param>
+            <param name="Get">"True" to get the requested data</param>
+            <returns>An error message or the requested data.</returns>
+        </member>
+        <member name="M:SmallBasicANN.NeuralNetwork.ErrorRequired(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Get or set the required RMS error.
+            The RMS error is current RootMeanSquare deviation in trained output layer values, default 0.0001.
+            </summary>
+            <param name="Name">The ANN name.</param>
+            <param name="Value">The requested data.</param>
+            <param name="Get">"True" to get the requested data</param>
+            <returns>An error message or the requested data.</returns>
+        </member>
+        <member name="M:SmallBasicANN.NeuralNetwork.BinaryOutput(Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive,Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Get or set wether the data is binary "True" or not.
+            </summary>
+            <param name="Name">The ANN name.</param>
+            <param name="Value">The requested data.</param>
+            <param name="Get">"True" to get the requested data</param>
+            <returns>An error message or the requested data.</returns>
+        </member>
+        <member name="P:SmallBasicANN.NeuralNetwork.ProgressReportFrequency">
+            <summary>
+            The progress reporting event frequency, number of test data consumed between each report, default 1000.
+            </summary>
+        </member>
+        <member name="P:SmallBasicANN.NeuralNetwork.LastANN">
+            <summary>
+            The last ANN to report progress.
+            </summary>
+        </member>
+        <member name="P:SmallBasicANN.NeuralNetwork.LastANNMessage">
+            <summary>
+            The last progress message while training.
+            Array of "Epoch", "% trained", "RMS error".
+            </summary>
+        </member>
+        <member name="E:SmallBasicANN.NeuralNetwork.ANNProgress">
+            <summary>
+            Progress event every 1000 trained items.
+            Change the default progress report frequency with ProgressReportFrequency
+            </summary>
+        </member>
+        <member name="M:SmallBasicANN.NeuralNetwork.GetWeights(Microsoft.SmallBasic.Library.Primitive)">
+            <summary>
+            Get the trained node weights.
+            </summary>
+            <param name="Name">The ANN name.</param>
+            <returns>An array with node weights.
+            array[layer][node][node+]
+            layer is input and hidden layers, indexed from 1
+            node is the nodes in layer, indexed from 1
+            node+ is the nodes in layer+1, indexed from 1
+            </returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,6 @@
+C:\Users\Dr Saajid\Downloads\SmallBasicANN-master\SmallBasicANN-master\bin\Debug\SmallBasicANN.dll
+C:\Users\Dr Saajid\Downloads\SmallBasicANN-master\SmallBasicANN-master\bin\Debug\SmallBasicANN.pdb
+C:\Users\Dr Saajid\Downloads\SmallBasicANN-master\SmallBasicANN-master\bin\Debug\SmallBasicLibrary.dll
+C:\Users\Dr Saajid\Downloads\SmallBasicANN-master\SmallBasicANN-master\obj\Debug\SmallBasicANN.csprojResolveAssemblyReference.cache
+C:\Users\Dr Saajid\Downloads\SmallBasicANN-master\SmallBasicANN-master\obj\Debug\SmallBasicANN.dll
+C:\Users\Dr Saajid\Downloads\SmallBasicANN-master\SmallBasicANN-master\obj\Debug\SmallBasicANN.pdb
